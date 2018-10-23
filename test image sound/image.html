@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a onclick="myAudioFunction('a');">
+        <img src="a.png">
+    </a>
+    <a onclick="myAudioFunction('b');">
+        <img src="B.jpg">
+    </a>
+    <script>
+        var aAudio = new Audio('c1.wav');
+        var bAudio = new Audio('b.mp3');
+        function myAudioFunction(letter) {
+            if(letter == 'a') {
+                aAudio.play();
+            } else if(letter == 'b') {
+                bAudio.play();
+            }
+        }
+    </script>
+
+</body>
+</html>
